@@ -1,0 +1,30 @@
+{
+  "name": "Mark-Soniel-Loka-Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mcsl10/Mark-Soniel-Loka-Portfolio.git",
+  "author": "“Mark <“marksonielloka@hotmail.com”>",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.12"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
