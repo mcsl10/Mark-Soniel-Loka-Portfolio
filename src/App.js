@@ -1,16 +1,51 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useRef } from "react";
+import styled from "styled-components";
 
-//------
+//Components
+import NavBar from "./components/NavBar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
-return (
-        <h1>TESTING</h1>
-)
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth"});
+  };
+
+  return (
+    <>
+      <NavBar
+        scrollToSection={scrollToSection}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
+    <EveryComponentSection ref={homeRef}>
+        <Home />
+    </EveryComponentSection>
+    <EveryComponentSection ref={aboutRef}>
+        <About />
+    </EveryComponentSection>
+    <EveryComponentSection ref={projectsRef}>
+        <Projects />
+    </EveryComponentSection>
+    <EveryComponentSection ref={contactRef}>
+        <Contact />
+    </EveryComponentSection>
+    </>
+  );
 };
+
+const EveryComponentSection = styled.section`
+min-height: 100vh;
+`
 
 export default App;
