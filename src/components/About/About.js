@@ -10,8 +10,9 @@ const About = () => {
       <TextContainer>
         <Header>About Me</Header>
         <DescriptiveText>
-          I approach everything with the same curiosity and enthusiasm: new
-          videogames, hikes or sports. When it comes to web development,
+          I approach everything with the same curiosity and enthusiasm: 
+          videogames, hikes, sports, and anything else that piques my interest. 
+          When it comes to web development,
           challenges are what I'm after. I like being thrown in new territories
           and code my way out, whether it's through HTML, CSS, Javascript,
           React, Express and Node. As a web developer, I look for ways to
