@@ -32,7 +32,7 @@ const Home = () => {
         <ContainerForProfileLinks>
           <TransformEffectForLinks>
             <IconLink
-              href="https://www.linkedin.com/" //Account is currently in hibernation mode
+              href="www.linkedin.com/in/mark-soniel-loka-4a9155198"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -59,7 +59,7 @@ const Header = styled.h1`
   margin: 20px 0;
   color: lightslategray;
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1185px) {
     font-size: 40px;
   }
 
@@ -86,7 +86,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 20vh;
   padding-right: 50px;
   padding-left: 120px;
 
