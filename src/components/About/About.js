@@ -6,7 +6,7 @@ import OutdoorImg2 from "../Images/outdoor2.jpeg";
 const About = () => {
   return (
     <Container>
-      <OutdoorSummerPicture src={OutdoorImg1} alt="Winter weather" />
+      <OutdoorSummerPicture src={OutdoorImg1} alt="Summer weather" />
       <TextContainer>
         <Header>About Me</Header>
         <DescriptiveText>
@@ -22,16 +22,18 @@ const About = () => {
         </DescriptiveText>
         <PC src={PcImg} alt="pc setup" />
       </TextContainer>
-      <OutdoorWinterPicture src={OutdoorImg2} alt="Summer day" />
+      <OutdoorWinterPicture src={OutdoorImg2} alt="Winter day" />
     </Container>
   );
 };
 
 const Header = styled.h2`
-  padding-left: 25px;
+  padding: 0 25%;
   font-size: 30px;
   font-weight: 500;
   color: lightslategray;
+  margin-top: 0;
+  margin-bottom: 23px;
 
   @media (max-width: 900px) {
     padding-left: 100px;
@@ -57,24 +59,25 @@ const DescriptiveText = styled.p`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+
 `;
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-top: 25px;
-  padding-left: 35px;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 90vw;
+
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-    padding-left: 0;
   }
 `;
 
 const PC = styled.img`
-  width: 350px;
+  width: 430px;
   border-radius: 10px;
   margin: 40px auto;
 
@@ -87,10 +90,6 @@ const OutdoorWinterPicture = styled.img`
   height: 550px;
   border-radius: 12px;
   margin-right: 20px;
-
-  @media (max-width: 1300px) {
-    height: 400px;
-  }
 `;
 
 //Will have to work on layout because this image goes on top of the "About me" header with smaller screens
