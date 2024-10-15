@@ -59,7 +59,7 @@ Using the MERN stack, I created a web application that allows gamers to:
 Thank you for your time and don't hesitate to reach out to me!
 
 Email: marksonielloka@gmail.com <br>
-LinkedIn: https://www.linkedin.com (account is currently hibernating) <br>
+LinkedIn: www.linkedin.com/in/mark-soniel-loka-4a9155198 <br>
 Portfolio:
 
 I'm always up for freelance opportunities and the chance to work on projects with other developers, designers, and more. I look forward to our future collaboration!
