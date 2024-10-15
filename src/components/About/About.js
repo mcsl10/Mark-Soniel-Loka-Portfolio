@@ -6,7 +6,7 @@ import OutdoorImg2 from "../Images/outdoor2.jpeg";
 const About = () => {
   return (
     <Container>
-      <OutdoorSummerPicture src={OutdoorImg1} alt="Summer weather" />
+      <OutdoorSummerPicture src={OutdoorImg1} alt="Summer day" />
       <TextContainer>
         <Header>About Me</Header>
         <DescriptiveText>
