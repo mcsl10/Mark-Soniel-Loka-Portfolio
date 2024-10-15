@@ -14,7 +14,7 @@ and attractive.
 
 * Leverage Tech Stack
 
-* Adapt Websites to Visitor's Expectations
+* Adapt Websites to User and Client Expectations
 
 * Understand Industry Demands
 
@@ -34,7 +34,25 @@ and attractive.
 
 ## Projects
 
-1. Web Browser Game: Using object-oriented programming and implementing classes, I made this web browser game more functional. 
+### 1. Web Browser Game: 
+
+Using object-oriented programming and implementing classes, I made this web browser game more functional. 
+
+### 2. Gaming Vault:
+
+Using the MERN stack, I created a web application that allows gamers to: 
+
+* **Create an Account**: Users can sign up to access personalized features.
+
+* **Explore Games**: Discover the top and newest games available.
+
+* **Search for Games**: Utilize a search function to find specific titles.
+
+* **Manage Game Lists**: Add games to various user lists (Interested, Currently Playing and Completed)
+
+* **Rate Games**: Provide ratings for games based on personal experiences.
+
+* **Add Notes**: Leave comments or notes for each game to track thoughts and feedback.
 
 ## Contact
 
