@@ -22,12 +22,30 @@ const Home = () => {
           to continuous growth and eager to take on innovative challenges.
         </IntroText>
         <ContainerForTechStack>
+          <TechItem>
           <FaHtml5 />
+          <TechText>HTML</TechText>
+          </TechItem>
+          <TechItem>
           <FaCss3 />
+          <TechText>CSS</TechText>
+          </TechItem>
+          <TechItem>
           <IoLogoJavascript />
+          <TechText>JavaScript</TechText>
+          </TechItem>
+          <TechItem>
           <FaReact />
+          <TechText>React</TechText>
+          </TechItem>
+          <TechItem>
           <FaNodeJs />
+          <TechText>Node.js</TechText>
+          </TechItem>
+          <TechItem>
           <FaGitAlt />
+          <TechText>Git</TechText>
+          </TechItem>
         </ContainerForTechStack>
         <ContainerForProfileLinks>
           <TransformEffectForLinks>
@@ -55,30 +73,14 @@ const Home = () => {
 };
 
 const Header = styled.h1`
-  font-size: 50px;
+  font-size: 3.3rem;
   margin: 20px 0;
   color: lightslategray;
-
-  @media (max-width: 1185px) {
-    font-size: 40px;
-  }
-
-  @media (max-width: 870px) {
-    font-size: 35px;
-  }
 `;
 
 const IntroText = styled.p`
   max-width: 550px;
   font-size: 19px;
-
-  @media (max-width: 1315px) {
-    font-size: 17px;
-  }
-
-  @media (max-width: 870px) {
-    font-size: 15px;
-  }
 `;
 
 const Container = styled.div`
@@ -87,8 +89,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 20vh;
-  padding-right: 50px;
-  padding-left: 120px;
 
   @media (max-width: 870px) {
     flex-direction: column;
@@ -99,18 +99,19 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 30px;
 `;
 
 const MyProfileImage = styled.img`
-  width: 320px;
+  width: 21rem;
 `;
 
 const ContainerForProfileLinks = styled.div`
   color: gray;
   display: flex;
   flex-direction: row;
-  padding-top: 7px;
+  padding-top: 3rem;
+  padding-left: 5rem;
 `;
 
 const Linkedin = styled(FaLinkedin)`
@@ -170,8 +171,8 @@ const ContainerForTechStack = styled.div`
   gap: 40px;
 
   svg {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     color: lightslategray;
   }
 
@@ -188,6 +189,18 @@ const ContainerForTechStack = styled.div`
       height: 30px;
     }
   }
+`;
+
+const TechItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TechText = styled.p`
+  margin-top: 8px;
+  color: lightslategray;
+  font-size: 14px;
 `;
 
 export default Home;
