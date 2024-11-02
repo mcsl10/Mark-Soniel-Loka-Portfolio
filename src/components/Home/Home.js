@@ -14,6 +14,7 @@ import { FaGitAlt } from "react-icons/fa";
 const Home = () => {
   return (
     <Container>
+      <ProfileSection>
       <MyProfileImage src={Image} alt="Image of Mark" />
       <TextContainer>
         <Header>Full-Stack Developer</Header>
@@ -46,7 +47,10 @@ const Home = () => {
           <FaGitAlt />
           <TechText>Git</TechText>
           </TechItem>
-        </ContainerForTechStack>
+          </ContainerForTechStack>
+          </TextContainer>
+        </ProfileSection>
+        {/* Socials Section */}
         <ContainerForProfileLinks>
           <TransformEffectForLinks>
             <IconLink
@@ -67,7 +71,6 @@ const Home = () => {
             </IconLink>
           </TransformEffectForLinks>
         </ContainerForProfileLinks>
-      </TextContainer>
     </Container>
   );
 };
@@ -95,6 +98,18 @@ const Container = styled.div`
   }
 `;
 
+// Group the profile image and text together
+const ProfileSection = styled.div`
+  display: flex;
+  align-items: flex-start; /* Keep image and text together */
+  flex-direction: row;
+
+  @media (max-width: 870px) {
+    flex-direction: column;
+    align-items: center; /* Center in mobile view */
+  }
+`;
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -110,8 +125,10 @@ const ContainerForProfileLinks = styled.div`
   color: gray;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-top: 3rem;
-  padding-left: 5rem;
+  width: 100%;
 `;
 
 const Linkedin = styled(FaLinkedin)`
