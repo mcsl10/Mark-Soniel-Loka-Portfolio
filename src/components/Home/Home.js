@@ -88,7 +88,7 @@ const IntroText = styled.p`
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 20vh;
@@ -127,17 +127,18 @@ const ContainerForProfileLinks = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 4rem;
+  padding-left: 18rem;
   width: 100%;
 `;
 
 const Linkedin = styled(FaLinkedin)`
-  width: 50px;
-  height: 50px;
+  width: 4rem;
+  height: 4rem;
 
   @media (max-width: 1315px) {
-    width: 45px;
-    height: 45px;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   @media (max-width: 870px) {
@@ -147,13 +148,13 @@ const Linkedin = styled(FaLinkedin)`
 `;
 
 const Github = styled(FaGithubSquare)`
-  width: 50px;
-  height: 50px;
+  width: 4rem;
+  height: 4rem;
   padding-left: 20px;
 
   @media (max-width: 1315px) {
-    width: 45px;
-    height: 45px;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   @media (max-width: 870px) {
@@ -195,8 +196,8 @@ const ContainerForTechStack = styled.div`
 
   @media (max-width: 1315px) {
     svg {
-      width: 35px;
-      height: 35px;
+      width: 2.19rem;
+      height: 2.19rem;
     }
   }
 
