@@ -54,7 +54,7 @@ const Home = () => {
         <ContainerForProfileLinks>
           <TransformEffectForLinks>
             <IconLink
-              href="https://www.linkedin.com/in/mark-soniel-loka-4a9155198"
+              href="https://www.linkedin.com/in/mark-soniel-loka"
               target="_blank"
               rel="noopener noreferrer"
             >
