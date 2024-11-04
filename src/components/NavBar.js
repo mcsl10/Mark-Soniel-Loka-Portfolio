@@ -16,31 +16,38 @@ const NavBar = ({scrollToSection, homeRef, aboutRef, projectsRef, contactRef}) =
 
 const NavigationBar = styled.nav`
 position: fixed;
-top: 62px;
-left: 40px;
+top: 0; /* Aligns the navbar to the top */
+left: 0; /* Aligns the navbar to the left */
+width: 100%; /* Spans the full width of the page */
 display: flex;
-flex-direction: column;
+flex-direction: row;
+justify-content: center;
+background-color: black;
+border-bottom: 2px solid gray;
+height: 3.5rem;
+z-index: 1000;
 `
 
 const NavButtons = styled.button`
-margin-bottom: 25px;
+color: lightgray;
+margin: 0 1rem; 
 height: 50px;
 width: 130px;
 font-family: poppins, sans-serif;
-font-size: 16px;
+font-size: 1rem;
+background-color: transparent;
+border: none;
 border-radius: 8px;
 transition: font-weight 0.3s ease, font-size 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 
 &:hover {
-font-weight: 700;
-font-size: 19px;
 cursor: pointer;
-opacity: 0.6;
-transform: scale(0.9);
+transform: scale(0.96);
 }
 
 &:focus {
     outline: none;
+    font-weight: 700;
 }
 
 @media (max-width: 1040px) {
