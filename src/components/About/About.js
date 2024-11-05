@@ -6,21 +6,29 @@ import OutdoorImg2 from "../Images/outdoor2.jpeg";
 const About = () => {
   return (
     <Container>
-      <OutdoorSummerPicture src={OutdoorImg1} alt="Summer day" />
       <TextContainer>
         <Header>About Me</Header>
         <DescriptiveText>
           I approach everything with the same curiosity and enthusiasm: 
-          videogames, hikes, sports, and anything else that piques my interest. 
+          <InterestList>
+          <li>Videogames</li>
+          <li>Sports</li>
+          <li>Hiking and Nature</li>
+          </InterestList>
+          and anything else that piques my interest. 
+        </DescriptiveText>
+        <MoreDescriptiveText>
           When it comes to web development,
           challenges are what I'm after. I like being thrown into new territories
           and code my way out, whether it's through the front-end or back-end, using HTML,
-          CSS, JavaScript, React, and Node. As a web developer, I strive to
+          CSS, JavaScript, React, and Node. 
+          </MoreDescriptiveText>
+          <MoreDescriptiveText>
+          As a web developer, I strive to
           streamline user experience and prioritize sites that are easy to use
           while still being engaging. I'm always up for improving my skills
           through exchanges and research.
-        </DescriptiveText>
-        <PC src={PcImg} alt="pc setup" />
+          </MoreDescriptiveText>
       </TextContainer>
       <OutdoorWinterPicture src={OutdoorImg2} alt="Winter day" />
     </Container>
@@ -29,7 +37,7 @@ const About = () => {
 
 const Header = styled.h2`
   padding: 0 25%;
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: 500;
   color: lightslategray;
   margin-top: 0;
@@ -41,25 +49,38 @@ const Header = styled.h2`
 `;
 
 const DescriptiveText = styled.p`
-  text-align: start;
-  max-width: 350px;
-  margin: 0 auto;
-  font-size: 17px;
+  max-width: 23rem;
+  margin: 2rem auto;
+  font-size: 1.063rem;
   padding-left: 10px;
 
-  @media (max-width: 1315px) {
+  /* @media (max-width: 1315px) {
     font-size: 16px;
   }
 
   @media (max-width: 900px) {
     font-size: 15px;
-  }
+  } */
 `;
+
+const MoreDescriptiveText = styled.p`
+max-width: 25rem;
+margin: 1rem auto;
+font-size: 1.063rem;
+padding-left: 10px;
+`
+
+const InterestList = styled.ul`
+padding-left: 20px;
+
+li {
+  margin-bottom: 0.1rem;
+}
+`
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-
 `;
 
 const Container = styled.div`
@@ -87,9 +108,10 @@ const PC = styled.img`
 `;
 
 const OutdoorWinterPicture = styled.img`
-  height: 550px;
+  height: 38rem;
   border-radius: 12px;
-  margin-right: 20px;
+  margin-left: 3.5rem;
+  margin-top: 4rem;
 `;
 
 const OutdoorSummerPicture = styled.img`
