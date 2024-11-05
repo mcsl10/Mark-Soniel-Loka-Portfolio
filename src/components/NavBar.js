@@ -42,12 +42,12 @@ transition: font-weight 0.3s ease, font-size 0.3s ease, opacity 0.3s ease, trans
 
 &:hover {
 cursor: pointer;
-transform: scale(0.96);
+opacity: 0.55;
+transform: scale(0.93);
 }
 
 &:focus {
     outline: none;
-    font-weight: 700;
 }
 
 @media (max-width: 1040px) {
