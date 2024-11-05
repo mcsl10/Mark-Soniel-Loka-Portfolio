@@ -3,6 +3,9 @@ import PcImg from "../Images/pc.jpeg";
 import OutdoorImg1 from "../Images/outdoor.jpeg";
 import OutdoorImg2 from "../Images/outdoor2.jpeg";
 
+//React icons
+import { GiHockey } from "react-icons/gi";
+
 const About = () => {
   return (
     <Container>
@@ -12,7 +15,9 @@ const About = () => {
           I approach everything with the same curiosity and enthusiasm: 
           <InterestList>
           <li>Videogames</li>
-          <li>Sports</li>
+          <li>
+            Sports <GiHockey style={{marginLeft: "4px", fontSize: "1.5rem"}} />
+          </li>
           <li>Hiking and Nature</li>
           </InterestList>
           and anything else that piques my interest. 
