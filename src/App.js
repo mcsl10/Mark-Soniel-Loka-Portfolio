@@ -46,6 +46,8 @@ const App = () => {
 
 const EveryComponentSection = styled.section`
 min-height: 100vh;
+max-width: 100vw;
+padding-top: 6rem;
 `
 
 export default App;
