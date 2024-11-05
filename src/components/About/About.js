@@ -13,9 +13,9 @@ const About = () => {
           I approach everything with the same curiosity and enthusiasm: 
           videogames, hikes, sports, and anything else that piques my interest. 
           When it comes to web development,
-          challenges are what I'm after. I like being thrown in new territories
-          and code my way out, whether it's through HTML, CSS, Javascript,
-          React, Express and Node. As a web developer, I look for ways to
+          challenges are what I'm after. I like being thrown into new territories
+          and code my way out, whether it's through the front-end or back-end, using HTML,
+          CSS, JavaScript, React, and Node. As a web developer, I strive to
           streamline user experience and prioritize sites that are easy to use
           while still being engaging. I'm always up for improving my skills
           through exchanges and research.
@@ -92,8 +92,6 @@ const OutdoorWinterPicture = styled.img`
   margin-right: 20px;
 `;
 
-//Will have to work on layout because this image goes on top of the "About me" header with smaller screens
-//display: none might be an option, but not the best
 const OutdoorSummerPicture = styled.img`
   height: 450px;
   border-radius: 12px;
