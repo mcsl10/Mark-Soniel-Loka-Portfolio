@@ -4,7 +4,10 @@ import OutdoorImg1 from "../Images/outdoor.jpeg";
 import OutdoorImg2 from "../Images/outdoor2.jpeg";
 
 //React icons
+import { GiConsoleController } from "react-icons/gi";
 import { GiHockey } from "react-icons/gi";
+import { GiPineTree } from "react-icons/gi";
+
 
 const About = () => {
   return (
@@ -14,11 +17,15 @@ const About = () => {
         <DescriptiveText>
           I approach everything with the same curiosity and enthusiasm: 
           <InterestList>
-          <li>Videogames</li>
+          <li>
+            Videogames <GiConsoleController style={{marginLeft: "4px", fontSize: "1.5rem"}} />
+          </li>
           <li>
             Sports <GiHockey style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
-          <li>Hiking and Nature</li>
+          <li>
+            Hiking and Nature <GiPineTree style={{marginLeft: "4px", fontSize: "1.5rem"}} />
+          </li>
           </InterestList>
           and anything else that piques my interest. 
         </DescriptiveText>
