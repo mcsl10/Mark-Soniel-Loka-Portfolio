@@ -32,7 +32,6 @@ const ProjectHeader = styled.h2`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
 `;
 
 const ProjectContainer = styled.div`
