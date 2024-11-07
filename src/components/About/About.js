@@ -7,6 +7,8 @@ import OutdoorImg2 from "../Images/outdoor2.jpeg";
 import { GiConsoleController } from "react-icons/gi";
 import { GiHockey } from "react-icons/gi";
 import { GiPineTree } from "react-icons/gi";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+
 
 
 const About = () => {
@@ -18,12 +20,15 @@ const About = () => {
           I approach everything with the same curiosity and enthusiasm: 
           <InterestList>
           <li>
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
             Videogames <GiConsoleController style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           <li>
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
             Sports <GiHockey style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           <li>
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
             Hiking and Nature <GiPineTree style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           </InterestList>
@@ -83,7 +88,8 @@ padding-left: 10px;
 `
 
 const InterestList = styled.ul`
-padding-left: 20px;
+padding-left: 3px;
+list-style-type: none;
 
 li {
   margin-bottom: 0.1rem;
