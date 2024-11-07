@@ -20,15 +20,15 @@ const About = () => {
           I approach everything with the same curiosity and enthusiasm: 
           <InterestList>
           <li>
-          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px", color: "cadetblue"}} />
             Videogames <GiConsoleController style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           <li>
-          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px", color: "lightseagreen"}} />
             Sports <GiHockey style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           <li>
-          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px"}} />
+          <FaRegArrowAltCircleRight style={{marginRight: "15px", marginBottom: "-2px", color: "teal"}} />
             Hiking and Nature <GiPineTree style={{marginLeft: "4px", fontSize: "1.5rem"}} />
           </li>
           </InterestList>
