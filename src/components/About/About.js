@@ -37,8 +37,12 @@ const About = () => {
         <MoreDescriptiveText>
           When it comes to web development,
           challenges are what I'm after. I like being thrown into new territories
-          and code my way out, whether it's through the front-end or back-end, using HTML,
-          CSS, JavaScript, React, and Node. 
+          and code my way out, whether it's through the front-end or back-end, using 
+          {' '}<AnimatedTech tech="HTML">HTML</AnimatedTech>, {' '}
+          <AnimatedTech tech="CSS">CSS</AnimatedTech>, {' '}
+          <AnimatedTech tech="JavaScript">JavaScript</AnimatedTech>, {' '}
+          <AnimatedTech tech="React">React</AnimatedTech>, {' '} 
+          and <AnimatedTech tech="Node">Node</AnimatedTech>.
           </MoreDescriptiveText>
           <MoreDescriptiveText>
           As a web developer, I strive to
@@ -79,6 +83,30 @@ const DescriptiveText = styled.p`
     font-size: 15px;
   } */
 `;
+
+// Keeping original font in white for tech stack and only have colors on hover (Keeping original colors commented out in case)
+const AnimatedTech = styled.span`
+  font-weight: bold;
+  /* color: ${({ tech }) =>
+    tech === 'HTML' ? '#e44d26' : // HTML orange-red
+    tech === 'CSS' ? '#1572b6' : // CSS blue
+    tech === 'JavaScript' ? '#f7df1e' : // JS yellow
+    tech === 'React' ? '#61dafb' : // React light blue
+    '#8cc84b'}; // Node.js green */
+  display: inline-block; // This ensures the element is treated as a block for the scaling effect (Scaling doesn't work without this)
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    color: ${({ tech }) =>
+      tech === 'HTML' ? '#e44d26' : // Darker HTML orange-red #c1351d
+      tech === 'CSS' ? '#1572b6' : // Darker CSS blue #106ba3
+      tech === 'JavaScript' ? '#f7df1e' : // Darker JS yellow #e4c024
+      tech === 'React' ? '#61dafb' : // Darker React light blue #4fa3d1
+      '#8cc84b'}; // Darker Node.js green #7a9d5c
+    transform: scale(0.92);
+  }
+`;
+
 
 const MoreDescriptiveText = styled.p`
 max-width: 25rem;
