@@ -4,99 +4,100 @@ import NyanCatProject from "../Images/gameProjectCropped.png";
 const Projects = () => {
   return (
     <Container>
-      <ProjectHeader>Projects</ProjectHeader>
+      <Header>Projects</Header>
       <ProjectContainer>
-        <TitleOfProject>
-          <ContainerForTitle>Web Browser Game</ContainerForTitle>
-          <DescriptonOfProjectImg>
+        <TextContainer>
+          <ProjectTitle>Web Browser Game</ProjectTitle>
+          <ProjectDescription>
             Using object-oriented programming and implementing both a score and
             lives system, I made this web browser game more functional. This,
             combined with the character, enemies, and gameboard, gave a more
             personal touch to the game. Finally, I gave the game a beginning and
             end by adding a restart button once the game is over.
-          </DescriptonOfProjectImg>
-        </TitleOfProject>
-        <ImgOfProject src={NyanCatProject} />
+          </ProjectDescription>
+          </TextContainer>
+        <ProjectImg src={NyanCatProject} alt="Screenshot of web browser game" />
       </ProjectContainer>
     </Container>
   );
 };
 
-const ProjectHeader = styled.h2`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Header = styled.h2`
   font-weight: 500;
-  font-size: 28px;
+  font-size: 1.8rem;
   margin: 0 auto;
   color: lightslategray;
 `;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: white;
-  font-size: 17px;
-  padding: 50px 200px;
-
-  @media (max-width: 1300px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-const ImgOfProject = styled.img`
-  width: 250px;
-  border-radius: 8px;
-  transition: width 0.2s ease;
-
-  &:hover {
-    width: 350px;
-    cursor: pointer;
-  }
-`;
-
-//Added this because as screen got smaller, TitleOfProject wasn't adjusting
-//This keeps TitleOfProject and DescriptionOfProjectImg in sync with screen movement
-const ContainerForTitle = styled.div`
-  @media (max-width: 1300px) {
-    padding-left: 50px;
-  }
-`;
-
-const TitleOfProject = styled.h3`
-  font-weight: 450;
+  font-size: 1.05rem;
+  max-width: 80rem;
+  margin: 5rem 0;
+  gap: 30px;
 
   @media (max-width: 900px) {
-    font-size: 19px;
-  }
-  @media (max-width: 800px) {
-    font-size: 18px;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
   }
 `;
 
-//Made this a div instead of p for better responsiveness at lower screen sizes
-const DescriptonOfProjectImg = styled.div`
-  font-weight: 300;
-  margin-top: 40px;
-  font-size: 18px;
+const TextContainer = styled.div`
+display: flex;
+flex-direction: column;
+max-width: 60%;
+padding: 10px;
 
-  //As the screen gets smaller, once width reaches 1000px, words stops wrapping because of min-width
-  //Text goes from moving to static
-  //Not the cleanest transition
-  @media (max-width: 1300px) {
-    padding-left: 50px;
+@media (max-width: 900px) {
+  max-width: 90%;
+  padding: 0;
+}
+`
+
+const ProjectTitle = styled.h3`
+margin: 0;
+padding: 0;
+padding-bottom: 10px;
+padding-left: 1rem;
+font-size: 1.2rem;
+`;
+
+const ProjectDescription = styled.p`
+  font-weight: 300;
+  margin-top: 30px;
+  font-size: 1.12rem;
+  line-height: 1.6;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+    font-size: 1rem;
   }
-  @media (max-width: 1000px) {
-    font-size: 17px;
-    min-width: 500px;
+`;
+
+const ProjectImg = styled.img`
+  width: 15rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
   }
-  @media (max-width: 800px) {
-    font-size: 16px;
-    min-width: 400px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
   }
 `;
 
