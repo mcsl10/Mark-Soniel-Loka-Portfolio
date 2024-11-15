@@ -45,7 +45,7 @@ const ProjectContainer = styled.div`
   margin: 5rem 0;
   gap: 30px;
 
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     flex-direction: column; 
     align-items: center; 
     gap: 15px;
@@ -76,9 +76,8 @@ const ProjectDescription = styled.p`
   font-weight: 300;
   margin-top: 30px;
   font-size: 1.12rem;
-  line-height: 1.6;
 
-  @media (max-width: 900px) {
+  @media (max-width: 763px) {
     max-width: 100%;
     font-size: 1rem;
   }
