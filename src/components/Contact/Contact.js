@@ -14,12 +14,28 @@ return (
 
 const ContactHeader = styled.h2`
 font-weight: 400;
-font-size: 44px;
+font-size: 3rem;
 margin-bottom: 50px; 
+
+@media (max-width: 888px) {
+font-size: 2.5rem;
+}
+
+@media (max-width: 535px) {
+font-size: 2rem;
+}
 `
 
 const InfoSection = styled.p`
-font-size: 18px;
+font-size: 1.3rem;
+
+@media (max-width: 888px) {
+font-size: 1rem;
+}
+
+@media (max-width: 535px) {
+font-size: 0.93rem;
+}
 `
 
 const ColoredWord = styled.span`
