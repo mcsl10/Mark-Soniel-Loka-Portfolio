@@ -122,7 +122,7 @@ padding-left: 10px;
     font-size: 0.99rem;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   margin: 0.9rem auto;
 }
 `
