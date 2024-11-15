@@ -67,21 +67,25 @@ const Header = styled.h2`
   @media (max-width: 900px) {
     padding-left: 100px;
   }
+
+  @media (max-width: 472px) {
+    font-size: 1.65rem;
+  }
 `;
 
 const DescriptiveText = styled.p`
   max-width: 23rem;
   margin: 2rem auto;
-  font-size: 1.063rem;
+  font-size: 1.1rem;
   padding-left: 10px;
 
-  /* @media (max-width: 1315px) {
-    font-size: 16px;
+  @media (max-width: 1212px) {
+    font-size: 0.99rem;
   }
 
-  @media (max-width: 900px) {
-    font-size: 15px;
-  } */
+  @media (max-width: 980px) {
+    margin: 0;
+  }
 `;
 
 // Keeping original font in white for tech stack and only have colors on hover (Keeping original colors commented out in case)
@@ -111,8 +115,16 @@ const AnimatedTech = styled.span`
 const MoreDescriptiveText = styled.p`
 max-width: 25rem;
 margin: 1rem auto;
-font-size: 1.063rem;
+font-size: 1.1rem;
 padding-left: 10px;
+
+@media (max-width: 1212px) {
+    font-size: 0.99rem;
+  }
+
+@media (max-width: 900px) {
+  margin: 0.9rem auto;
+}
 `
 
 const InterestList = styled.ul`
@@ -135,37 +147,31 @@ const Container = styled.div`
   justify-content: center;
   min-height: 100vh;
   max-width: 90vw;
+  /* flex-wrap: wrap; // Allow wrapping to avoid my description from getting too tight and getting pushed down */
 
 
-  @media (max-width: 900px) {
+  @media (max-width: 980px) {
     flex-direction: column;
     align-items: center;
+
   }
 `;
 
-const PC = styled.img`
-  width: 430px;
-  border-radius: 10px;
-  margin: 40px auto;
-
-  @media (max-width: 1300px) {
-    width: 300px;
-  }
-`;
 
 const OutdoorWinterPicture = styled.img`
   height: 38rem;
   border-radius: 12px;
   margin-left: 3.5rem;
   margin-top: 4rem;
-`;
 
-const OutdoorSummerPicture = styled.img`
-  height: 450px;
-  border-radius: 12px;
+  @media (max-width: 1212px) {
+    height: 32rem;
+    margin-top: 6.2rem;
+  }
 
-  @media (max-width: 1300px) {
-    height: 350px;
+  @media (max-width: 980px) {
+    margin-top: 0;
+    margin-left: 0;
   }
 `;
 
