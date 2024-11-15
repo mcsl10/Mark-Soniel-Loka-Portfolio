@@ -8,11 +8,15 @@ h1, h2, h3, p {
 }
 
 body {
-    /* background: black; */
-    /* background: linear-gradient(90deg, rgba(42,42,45,1) 0%, rgba(28,28,31,1) 57%, rgba(42,42,47,1) 100%); */
     background: linear-gradient(to right, black, #1a1a1a);
     margin-left: 10%;
     margin-right: 10%;
+    overflow-x: hidden;
+
+        @media (max-width: 900px) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 `
 
