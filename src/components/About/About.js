@@ -173,6 +173,18 @@ const OutdoorWinterPicture = styled.img`
     margin-top: 0;
     margin-left: 0;
   }
+
+  @media (max-width: 800px) {
+    height: 29rem;
+  }
+
+  @media (max-width: 550px) {
+    height: 27rem;
+  }
+
+  @media (max-width: 400px) {
+    height: 25rem;
+  }
 `;
 
 export default About;
