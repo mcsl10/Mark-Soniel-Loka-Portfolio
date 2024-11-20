@@ -80,7 +80,7 @@ const Header = styled.h1`
   margin: 20px 0;
   color: lightslategray;
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1212px) {
     font-size: 2.9rem;
   }
 
@@ -97,8 +97,8 @@ const IntroText = styled.p`
   max-width: 550px;
   font-size: 1.19rem;
 
-  @media (max-width: 1370px) {
-    font-size: 0.96rem;
+  @media (max-width: 1212px) {
+    font-size: 1rem;
   }
 
   @media (max-width: 1022px) {
@@ -149,7 +149,7 @@ const TextContainer = styled.div`
 const MyProfileImage = styled.img`
   width: 21rem;
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1212px) {
     width: 18rem;
   }
 
@@ -177,7 +177,7 @@ const Linkedin = styled(FaLinkedin)`
   width: 4rem;
   height: 4rem;
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1212px) {
     width: 3.5rem;
     height: 3.5rem;
   }
@@ -193,7 +193,7 @@ const Github = styled(FaGithubSquare)`
   height: 4rem;
   padding-left: 20px;
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1212px) {
     width: 3.5rem;
     height: 3.5rem;
   }
@@ -238,7 +238,7 @@ const ContainerForTechStack = styled.div`
     color: lightslategray;
   }
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1212px) {
     svg {
       width: 2.12rem;
       height: 2.12rem;
