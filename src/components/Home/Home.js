@@ -87,6 +87,10 @@ const Header = styled.h1`
   @media (max-width: 900px) {
     font-size: 2.5rem;
   }
+
+  @media (max-width: 478px) {
+    text-align: center;
+  }
 `;
 
 const IntroText = styled.p`
@@ -95,6 +99,10 @@ const IntroText = styled.p`
 
   @media (max-width: 1370px) {
     font-size: 0.96rem;
+  }
+
+  @media (max-width: 1022px) {
+    text-align: center;
   }
 
   @media (max-width: 900px) {
@@ -221,7 +229,8 @@ const ContainerForTechStack = styled.div`
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
-  
+  justify-content: center; 
+  align-items: center;      
 
   svg {
     width: 2.5rem;
