@@ -79,11 +79,27 @@ const Header = styled.h1`
   font-size: 3.3rem;
   margin: 20px 0;
   color: lightslategray;
+
+  @media (max-width: 1370px) {
+    font-size: 2.9rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const IntroText = styled.p`
   max-width: 550px;
-  font-size: 19px;
+  font-size: 1.19rem;
+
+  @media (max-width: 1370px) {
+    font-size: 0.96rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 0.92rem;
+  }
 `;
 
 const Container = styled.div`
@@ -104,9 +120,9 @@ const ProfileSection = styled.div`
   align-items: flex-start; /* Keep image and text together */
   flex-direction: row;
 
-  @media (max-width: 870px) {
+  @media (max-width: 1022px) {
     flex-direction: column;
-    align-items: center; /* Center in mobile view */
+    align-items: center; 
   }
 `;
 
@@ -115,10 +131,23 @@ const TextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30px;
+
+  @media (max-width: 1022px) {
+    margin-left: 0;
+    align-items: center;
+  }
 `;
 
 const MyProfileImage = styled.img`
   width: 21rem;
+
+  @media (max-width: 1370px) {
+    width: 18rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 16rem;
+  }
 `;
 
 const ContainerForProfileLinks = styled.div`
@@ -130,20 +159,24 @@ const ContainerForProfileLinks = styled.div`
   padding-top: 4rem;
   padding-left: 18rem;
   width: 100%;
+
+  @media (max-width: 1022px) {
+    padding-left: 0;
+  }
 `;
 
 const Linkedin = styled(FaLinkedin)`
   width: 4rem;
   height: 4rem;
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1370px) {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  @media (max-width: 870px) {
-    width: 40px;
-    height: 40px;
+  @media (max-width: 900px) {
+    width: 3.3rem;
+    height: 3.3rem;
   }
 `;
 
@@ -152,14 +185,14 @@ const Github = styled(FaGithubSquare)`
   height: 4rem;
   padding-left: 20px;
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1370px) {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  @media (max-width: 870px) {
-    width: 40px;
-    height: 40px;
+  @media (max-width: 900px) {
+    width: 3.3rem;
+    height: 3.3rem;
   }
 `;
 
@@ -187,6 +220,8 @@ const TransformEffectForLinks = styled.div`
 const ContainerForTechStack = styled.div`
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  
 
   svg {
     width: 2.5rem;
@@ -194,17 +229,17 @@ const ContainerForTechStack = styled.div`
     color: lightslategray;
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1370px) {
     svg {
-      width: 2.19rem;
-      height: 2.19rem;
+      width: 2.12rem;
+      height: 2.12rem;
     }
   }
 
-  @media (max-width: 870px) {
+  @media (max-width: 900px) {
     svg {
-      width: 30px;
-      height: 30px;
+      width: 2rem;
+      height: 2rem;
     }
   }
 `;
