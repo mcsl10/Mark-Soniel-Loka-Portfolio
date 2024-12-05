@@ -1,10 +1,24 @@
 import styled from "styled-components";
 import NyanCatProject from "../Images/gameProjectCropped.png";
+import GamingVaultProject from "../Images/gameinfo3.png"
 
 const Projects = () => {
   return (
     <Container>
       <Header>Projects</Header>
+      <ProjectContainer>
+        <TextContainer>
+          <ProjectTitle>Gaming Vault</ProjectTitle>
+          <ProjectDescription>
+            A full-stack web application utilizing the IGDB API to fetch and display game data. 
+            Users can explore a list of most the popular and newest games, manage their gaming catalog by 
+            adding games to 'Interested', 'Currently Playing', or 'Played' sections, and leave 
+            ratings and comments. This project showcases my creativity in designing a personalized and 
+            interactive experience for gamers, blending functionality with an intuitive user interface.
+          </ProjectDescription>
+          </TextContainer>
+        <ProjectImg src={GamingVaultProject} alt="Screenshot of Gaming Vault" />
+      </ProjectContainer>
       <ProjectContainer>
         <TextContainer>
           <ProjectTitle>Web Browser Game</ProjectTitle>
@@ -75,11 +89,11 @@ font-size: 1.2rem;
 const ProjectDescription = styled.p`
   font-weight: 300;
   margin-top: 30px;
-  font-size: 1.12rem;
+  font-size: 1.1rem;
 
   @media (max-width: 763px) {
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 0.96rem;
   }
 `;
 
