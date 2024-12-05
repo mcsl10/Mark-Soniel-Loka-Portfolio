@@ -11,7 +11,7 @@ const Projects = () => {
           <ProjectTitle>Gaming Vault</ProjectTitle>
           <ProjectDescription>
             A full-stack web application utilizing the IGDB API to fetch and display game data. 
-            Users can explore a list of most the popular and newest games, manage their gaming catalog by 
+            Users can explore a list of the most popular and newest games, manage their gaming catalog by 
             adding games to 'Interested', 'Currently Playing', or 'Played' sections, and leave 
             ratings and comments. This project showcases my creativity in designing a personalized and 
             interactive experience for gamers, blending functionality with an intuitive user interface.
@@ -59,7 +59,7 @@ const ProjectContainer = styled.div`
   margin: 5rem 0;
   gap: 30px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 980px) {
     flex-direction: column; 
     align-items: center; 
     gap: 15px;
@@ -91,7 +91,7 @@ const ProjectDescription = styled.p`
   margin-top: 30px;
   font-size: 1.1rem;
 
-  @media (max-width: 763px) {
+  @media (max-width: 1250px) {
     max-width: 100%;
     font-size: 0.96rem;
   }
