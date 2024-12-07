@@ -7,12 +7,12 @@ Explore my work and discover how I can contribute to your team.
 ## Web Development
 
 Web development has always been a way for me to further explore my problem-solving abilities.
-I make use of my creativity and research skills to create websites that are easy to use, functional,
+I make use of my creativity and research skills to create applications that are easy to use, functional,
 and attractive. 
 
 **As a Full-Stack Developer, I:**
 
-- Leverage Tech Stack
+- Utilize Modern Technologies to Build Scalable and Efficient Web Applications 
 
 - Adapt Websites to User and Client Expectations
 
@@ -22,27 +22,35 @@ and attractive.
 
 ### Technical Skills: 
 
-- **Front-End Development:** HTML, CSS, JavaScript, React
+- **Front-End Development:** 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 
-- **Back-End Development:** Node.js, Express.js
+- **Back-End Development:** 
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style)
 
-- Version Control: Git
+- **Version Control:** 
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-- Database Management: MongoDB
+- **Database Management:** 
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+
 
 ### Soft Skills: 
 
-- Problem-Solving 
+- **Problem-Solving** 
 
-- Adaptability 
+- **Adaptability** 
 
-- Targeted Research 
+- **Targeted Research** 
 
 ### Tools: 
-
-- Insomnia
-
-- Styled Components (UI)
+![Insomnia](https://img.shields.io/badge/Insomnia-5849BE?style=flat&logo=insomnia&logoColor=white)
+![Styled-Components](https://img.shields.io/badge/Styled--Components-DB7093?style=flat&logo=styled-components&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 
 ## Projects
 
