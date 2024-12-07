@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! Here, you'll get a good understanding of who I am as a full-stack developer.
 I've included everything from my skills, projects, and more.
-Take a look to get to know me.
+Explore my work and discover how I can contribute to your team.
 
 ## Web Development
 
@@ -12,47 +12,61 @@ and attractive.
 
 **As a Full-Stack Developer, I:**
 
-* Leverage Tech Stack
+- Leverage Tech Stack
 
-* Adapt Websites to User and Client Expectations
+- Adapt Websites to User and Client Expectations
 
-* Understand Industry Demands
+- Understand Industry Demands
 
 ## Skills
 
-* Front-End Development: HTML, CSS, JavaScript, React
+### Technical Skills: 
 
-* Back-End Development: Node.js, Express.js
+- **Front-End Development:** HTML, CSS, JavaScript, React
 
-* Version Control: Git
+- **Back-End Development:** Node.js, Express.js
 
-* Database Management: MongoDB
+- Version Control: Git
 
-* Problem-Solving 
+- Database Management: MongoDB
 
-* Targeted Research 
+### Soft Skills: 
+
+- Problem-Solving 
+
+- Adaptability 
+
+- Targeted Research 
+
+### Tools: 
+
+- Insomnia
+
+- Styled Components (UI)
 
 ## Projects
 
-### 1. Web Browser Game: 
-
-Using object-oriented programming and implementing classes, I made this web browser game more functional. 
-
-### 2. Gaming Vault:
+### Gaming Vault:
 
 Using the MERN stack, I created a web application that allows gamers to: 
 
-* **Create an Account**: Users can sign up to access personalized features.
+- **Create an Account**: Users can sign up to access personalized features.
 
-* **Explore Games**: Discover the top and newest games available.
+- **Explore Games**: Discover the top and newest games available.
 
-* **Search for Games**: Utilize a search function to find specific titles.
+- **Search for Games**: Utilize a search function to find specific titles.
 
-* **Manage Game Lists**: Add games to various user lists (Interested, Currently Playing and Completed)
+- **Manage Game Lists**: Add games to various user lists (Interested, Currently Playing and Completed)
 
-* **Rate Games**: Provide ratings for games based on personal experiences.
+- **Rate Games**: Provide ratings for games based on personal experiences.
 
-* **Add Notes**: Leave comments or notes for each game to track thoughts and feedback.
+- **Add Notes**: Leave comments or notes for each game to track thoughts and feedback.
+
+### Web Browser Game: 
+
+- Using object-oriented programming and implementing classes, I made this web browser game more functional. 
+
+- Developed a life system, scoring system as well as a restart button when game has ended 
 
 ## Contact
 
