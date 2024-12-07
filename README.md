@@ -72,8 +72,6 @@ Using the MERN stack, I created a web application that allows gamers to:
 
 Thank you for your time and don't hesitate to reach out to me!
 
-[My LinkedIn](https://www.linkedin.com/in/mark-soniel-loka/) <br>
-[My Portfolio](https://mark-soniel-loka-portfolio.vercel.app) <br>
-marksonielloka@gmail.com <br>
+[LinkedIn](https://www.linkedin.com/in/mark-soniel-loka/) | [Portfolio](https://mark-soniel-loka-portfolio.vercel.app) | marksonielloka@gmail.com
 
 I'm always up for freelance opportunities and the chance to work on projects with other developers, designers, and more. I look forward to our future collaboration!
