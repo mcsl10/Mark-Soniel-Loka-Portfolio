@@ -8,7 +8,7 @@ Explore my work and discover how I can contribute to your team.
 
 Web development has always been a way for me to further explore my problem-solving abilities.
 I make use of my creativity and research skills to create applications that are easy to use, functional,
-and attractive. 
+and visually appealing. 
 
 **As a Full-Stack Developer, I:**
 
