@@ -16,6 +16,13 @@ const Projects = () => {
             ratings and comments. This project showcases my creativity in designing a personalized and 
             interactive experience for gamers, blending functionality with an intuitive user interface.
           </ProjectDescription>
+          <ProjectLink
+          href="https://github.com/mcsl10/Gaming-Vault"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            View Code
+          </ProjectLink>
           </TextContainer>
         <ProjectImg src={GamingVaultProject} alt="Screenshot of Gaming Vault" />
       </ProjectContainer>
@@ -29,6 +36,13 @@ const Projects = () => {
             personal touch to the game. Finally, I gave the game a beginning and
             end by adding a restart button once the game is over.
           </ProjectDescription>
+          <ProjectLink
+          href="https://github.com/mcsl10/project-js-nyan-cat"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            View Code
+          </ProjectLink>
           </TextContainer>
         <ProjectImg src={NyanCatProject} alt="Screenshot of web browser game" />
       </ProjectContainer>
@@ -76,7 +90,7 @@ padding: 10px;
   max-width: 90%;
   padding: 0;
 }
-`
+`;
 
 const ProjectTitle = styled.h3`
 margin: 0;
@@ -97,6 +111,41 @@ const ProjectDescription = styled.p`
   }
 `;
 
+const ProjectLink = styled.a`
+  align-self: center;
+  height: 3rem;
+  width: 7rem;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: poppins;
+  text-decoration: none;
+  padding: 2px 12px;
+  margin-top: 0.8rem;
+  border: solid #404c5d 1px;
+  font-size: 1rem;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+
+  &:hover {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+  &:active {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    transition: 100ms;
+  }
+`;
+
 const ProjectImg = styled.img`
   width: 15rem;
   border-radius: 8px;
@@ -113,13 +162,5 @@ const ProjectImg = styled.img`
     margin-left: 0;
   }
 `;
-
-//Behavior to fix in the future
-//On my 13 inch Mac, when I make the screen smaller while in Projects something weird happens
-//After clicking on Projects button and making the screen smaller (at a certain width)
-//Screen scrolls up, showing the pc picture as well as the outdoor picture with Projects title at the bottom
-//Funny thing is that after that, when making screen bigger again and then smaller again, it works fine
-//It automatically comes back to the projects section and works as intended
-//However on my 24 inch monitor, it doesn't do this at all
 
 export default Projects;
