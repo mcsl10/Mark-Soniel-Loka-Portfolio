@@ -24,7 +24,6 @@ flex-direction: row;
 justify-content: center;
 background-color: black;
 border-bottom: 2px solid gray;
-height: 3.5rem;
 z-index: 1000;
 `
 
