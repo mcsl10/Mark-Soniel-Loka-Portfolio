@@ -49,6 +49,11 @@ transform: scale(0.93);
     outline: none;
 }
 
+&:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 1040px) {
 width: 100px;
 font-size: 15px;
