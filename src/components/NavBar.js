@@ -61,10 +61,6 @@ font-size: 15px;
 
 @media (max-width: 615px) {
     width: 70px;
-
-    &:hover {
-        font-size: 15px;
-    }
 }
 `;
 
