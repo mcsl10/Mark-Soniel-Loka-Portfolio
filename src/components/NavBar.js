@@ -56,12 +56,12 @@ transform: scale(0.93);
 
 @media (max-width: 1040px) {
 width: 100px;
-font-size: 15px;
+font-size: 0.938rem;
 }
 
 @media (max-width: 730px) {
     width: 90px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 @media (max-width: 615px) {
