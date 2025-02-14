@@ -176,6 +176,11 @@ const ContainerForProfileLinks = styled.div`
 const Linkedin = styled(FaLinkedin)`
   width: 4rem;
   height: 4rem;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0px 4px 10px tomato;
+  }
 
   @media (max-width: 1212px) {
     width: 3.5rem;
@@ -191,7 +196,12 @@ const Linkedin = styled(FaLinkedin)`
 const Github = styled(FaGithubSquare)`
   width: 4rem;
   height: 4rem;
-  padding-left: 20px;
+  border-radius: 8px;
+  margin-left: 20px;
+
+  &:hover {
+    box-shadow: 0px 4px 10px tomato;
+  }
 
   @media (max-width: 1212px) {
     width: 3.5rem;
@@ -208,7 +218,7 @@ const IconLink = styled.a`
   color: inherit;
 
   &:hover {
-    opacity: 0.5;
+    color: gold;
   }
 `;
 
