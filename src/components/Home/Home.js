@@ -17,9 +17,9 @@ const Home = () => {
       <ProfileSection>
       <MyProfileImage src={Image} alt="Image of Mark" />
       <TextContainer>
-        <Header>Full-Stack Developer</Header>
+        <Header><Name>Hi, I'm Mark</Name> | Full-Stack Developer</Header>
         <IntroText>
-          Hi, I'm Mark Soniel-Loka. Passionate about development, I'm dedicated
+          Passionate about development, I'm dedicated
           to continuous growth and eager to take on innovative challenges.
         </IntroText>
         <ContainerForTechStack>
@@ -77,6 +77,7 @@ const Home = () => {
 
 const Header = styled.h1`
   font-size: 3.3rem;
+  font-weight: 500;
   margin: 20px 0;
   color: lightslategray;
 
@@ -92,6 +93,10 @@ const Header = styled.h1`
     text-align: center;
   }
 `;
+
+const Name = styled.span`
+//To be determined
+`
 
 const IntroText = styled.p`
   max-width: 550px;
