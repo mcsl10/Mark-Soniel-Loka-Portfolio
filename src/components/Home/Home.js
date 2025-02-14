@@ -84,6 +84,10 @@ const Header = styled.h1`
   @media (max-width: 1212px) {
     font-size: 2.9rem;
   }
+  
+  @media (max-width: 984px) {
+    text-align: center;
+  }
 
   @media (max-width: 900px) {
     font-size: 2.5rem;
@@ -170,7 +174,6 @@ const ContainerForProfileLinks = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
-  padding-left: 18rem;
   width: 100%;
 
   @media (max-width: 1022px) {
