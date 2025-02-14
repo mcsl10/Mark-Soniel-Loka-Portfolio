@@ -157,6 +157,11 @@ const TextContainer = styled.div`
 
 const MyProfileImage = styled.img`
   width: 21rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.15); 
+  }
 
   @media (max-width: 1212px) {
     width: 18rem;
