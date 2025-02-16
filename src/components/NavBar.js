@@ -41,8 +41,9 @@ transition: font-weight 0.3s ease, font-size 0.3s ease, opacity 0.3s ease, trans
 
 &:hover {
 cursor: pointer;
-opacity: 0.55;
 transform: scale(0.93);
+color: gold;
+text-shadow: 0px 4px 10px tomato;
 }
 
 &:focus {
