@@ -17,7 +17,7 @@ const Home = () => {
       <ProfileSection>
       <MyProfileImage src={Image} alt="Image of Mark" />
       <TextContainer>
-        <Header><Name>Hi, I'm Mark</Name> | Full-Stack Developer</Header>
+        <Header>Hi, I'm <Name>Mark</Name> | Full-Stack Developer</Header>
         <IntroText>
           Passionate about development, I'm dedicated
           to continuous growth and eager to take on innovative challenges.
@@ -99,7 +99,30 @@ const Header = styled.h1`
 `;
 
 const Name = styled.span`
-//To be determined
+/* color: gold;
+text-shadow: 0px 4px 10px tomato; */
+color: royalblue;
+position: relative;
+
+&::after {
+content: "";
+z-index: -100;
+position: absolute;
+background: gold;
+height: 28px;
+width: 100%;
+bottom: 0;
+left: 0;
+transition: width 0.2s ease-in-out;
+/* box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); */
+box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
+}
+
+&:hover::after {
+  width: 30%;
+  /* box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.7);  */
+  box-shadow: 0px 0px 15px rgba(255, 99, 71, 0.8);
+}
 `
 
 const IntroText = styled.p`
