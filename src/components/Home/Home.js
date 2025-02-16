@@ -158,6 +158,12 @@ const TextContainer = styled.div`
 const MyProfileImage = styled.img`
   width: 21rem;
   transition: transform 0.3s ease;
+  border-radius: 50%; /* Makes the border around my img sync with my circle shaped img */
+  position: relative;
+  border: 2px solid transparent; /* Transparent so background is visible */
+  background: linear-gradient(white, white) padding-box, 
+              repeating-linear-gradient(45deg, gold, gold 10px, transparent 10px, transparent 20px) border-box;
+  animation: borderAnimation 8s linear infinite;
 
   &:hover {
     transform: scale(1.15); 
@@ -169,6 +175,11 @@ const MyProfileImage = styled.img`
 
   @media (max-width: 900px) {
     width: 16rem;
+  }
+
+  @keyframes borderAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; } /* Moves the dashed effect */
   }
 `;
 
