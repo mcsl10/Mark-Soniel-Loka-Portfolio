@@ -11,7 +11,6 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 const About = () => {
   return (
     <Container>
-      <TextContainer>
         <Header><HeaderAnimation>About Me</HeaderAnimation></Header>
         <DescriptiveText>
           I approach everything with the same curiosity and enthusiasm: 
@@ -42,26 +41,16 @@ const About = () => {
           while still being engaging. I'm always up for improving my skills
           through exchanges and research.
           </MoreDescriptiveText>
-      </TextContainer>
     </Container>
   );
 };
 
 const Header = styled.h2`
-  padding: 0 25%;
+  text-align: center;
   font-size: 1.9rem;
   font-weight: 500;
   color: royalblue;
   margin-top: 0;
-  margin-bottom: 23px;
-
-  @media (max-width: 900px) {
-    padding-left: 100px;
-  }
-
-  @media (max-width: 472px) {
-    font-size: 1.65rem;
-  }
 `;
 
 const HeaderAnimation = styled.span`
@@ -128,24 +117,15 @@ li {
 }
 `
 
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   max-width: 90vw;
-  /* flex-wrap: wrap; // Allow wrapping to avoid my description from getting too tight and getting pushed down */
-
 
   @media (max-width: 980px) {
     flex-direction: column;
     align-items: center;
-
   }
 `;
 
