@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import PcImg from "../Images/pc.jpeg";
-import OutdoorImg1 from "../Images/outdoor.jpeg";
-import OutdoorImg2 from "../Images/outdoor2.jpeg";
 
 //React icons
 import { GiConsoleController } from "react-icons/gi";
