@@ -5,7 +5,7 @@ import GamingVaultProject from "../Images/gameinfo3.png"
 const Projects = () => {
   return (
     <Container>
-      <Header>Projects</Header>
+      <Header><HeaderAnimation>Projects</HeaderAnimation></Header>
       <ProjectContainer>
         <TextContainer>
           <ProjectTitle>Gaming Vault</ProjectTitle>
@@ -58,11 +58,34 @@ const Container = styled.div`
 
 const Header = styled.h2`
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin: 0 auto;
-  color: lightslategray;
+  color: royalblue;
 `;
 
+const HeaderAnimation = styled.span`
+position: relative;
+
+&::after {
+content: "";
+z-index: -100;
+position: absolute;
+background: gold;
+height: 18px;
+width: 100%;
+bottom: 0;
+left: 0;
+transition: width 0.2s ease-in-out;
+/* box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); */
+box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
+}
+
+&:hover::after {
+  width: 30%;
+  /* box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.7);  */
+  box-shadow: 0px 0px 15px rgba(255, 99, 71, 0.8);
+}
+`
 
 const ProjectContainer = styled.div`
   display: flex;
