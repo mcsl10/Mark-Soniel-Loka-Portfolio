@@ -51,7 +51,6 @@ const About = () => {
           through exchanges and research.
           </MoreDescriptiveText>
       </TextContainer>
-      <OutdoorWinterPicture src={OutdoorImg2} alt="Winter day" />
     </Container>
   );
 };
@@ -178,36 +177,6 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
-  }
-`;
-
-
-const OutdoorWinterPicture = styled.img`
-  height: 38rem;
-  border-radius: 12px;
-  margin-left: 3.5rem;
-  margin-top: 4rem;
-
-  @media (max-width: 1212px) {
-    height: 32rem;
-    margin-top: 6.2rem;
-  }
-
-  @media (max-width: 980px) {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  @media (max-width: 800px) {
-    height: 29rem;
-  }
-
-  @media (max-width: 550px) {
-    height: 27rem;
-  }
-
-  @media (max-width: 400px) {
-    height: 25rem;
   }
 `;
 
