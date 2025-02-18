@@ -45,6 +45,18 @@ const About = () => {
   );
 };
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 90vw;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 const Header = styled.h2`
   text-align: center;
   font-size: 1.9rem;
@@ -92,6 +104,14 @@ const DescriptiveText = styled.p`
   }
 `;
 
+const InterestList = styled.ul`
+padding-left: 3px;
+list-style-type: none;
+
+li {
+  margin-bottom: 0.1rem;
+}
+`
 
 const MoreDescriptiveText = styled.p`
 max-width: 25rem;
@@ -107,26 +127,5 @@ padding-left: 10px;
   margin: 0.9rem auto;
 }
 `
-
-const InterestList = styled.ul`
-padding-left: 3px;
-list-style-type: none;
-
-li {
-  margin-bottom: 0.1rem;
-}
-`
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 90vw;
-
-  @media (max-width: 980px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
 
 export default About;
