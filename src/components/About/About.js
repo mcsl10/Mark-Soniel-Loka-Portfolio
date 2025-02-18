@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import coolDev from "../Images/cooldev.jpg"
 
 //React icons
 import { GiConsoleController } from "react-icons/gi";
@@ -30,6 +31,7 @@ const About = () => {
           </InterestList>
           and anything else that piques my interest. 
         </DescriptiveText>
+        <CoolDevImg src={coolDev} alt="Developer art" />
         <MoreDescriptiveText>
           When it comes to web development,
           challenges are what I'm after. I like being thrown into new territories
@@ -111,6 +113,9 @@ list-style-type: none;
 li {
   margin-bottom: 0.1rem;
 }
+`
+
+const CoolDevImg = styled.img`
 `
 
 const MoreDescriptiveText = styled.p`
