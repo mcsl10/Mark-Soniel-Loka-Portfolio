@@ -58,7 +58,6 @@ const About = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   max-width: 90vw;
 
   @media (max-width: 980px) {
@@ -73,6 +72,7 @@ const Header = styled.h2`
   font-weight: 500;
   color: royalblue;
   margin-top: 0;
+  margin-bottom: 4rem;
 `;
 
 const HeaderAnimation = styled.span`
@@ -101,13 +101,23 @@ box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
 
 const TopRow = styled.div`
 display: flex;
-justify-content: center;
-gap: 7rem;
+justify-content: space-between;
+margin-right: 15rem;
+
+@media (max-width: 1350px) {
+  margin-right: 10rem;
+}
+
+@media (max-width: 1100px) {
+  margin-right: 7rem;
+}
+
 
 @media (max-width: 980px) {
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
+  gap: 1rem;
+  margin-right: 0;
 }
 `
 
@@ -147,7 +157,6 @@ transition: transform 0.3s ease;
 
 const BottomRow = styled.div`
 display: flex;
-justify-content: center;
 gap: 7rem;
 margin-top: 1.2rem;
 
