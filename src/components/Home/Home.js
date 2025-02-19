@@ -224,6 +224,7 @@ const Linkedin = styled(FaLinkedin)`
   width: 4rem;
   height: 4rem;
   border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(160, 180, 255, 0.6);
 
   &:hover {
     box-shadow: 0px 4px 10px tomato;
@@ -245,6 +246,7 @@ const Github = styled(FaGithubSquare)`
   height: 4rem;
   border-radius: 8px;
   margin-left: 20px;
+  box-shadow: 0px 2px 5px rgba(160, 180, 255, 0.6);
 
   &:hover {
     box-shadow: 0px 4px 10px tomato;
