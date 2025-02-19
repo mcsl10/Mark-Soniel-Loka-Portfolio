@@ -138,7 +138,6 @@ const ProjectLink = styled.a`
   align-self: center;
   height: 3rem;
   width: 7rem;
-  background: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,26 +145,20 @@ const ProjectLink = styled.a`
   font-family: poppins;
   text-decoration: none;
   padding: 2px 12px;
-  margin-top: 0.8rem;
-  border: solid #404c5d 1px;
+  margin-top: 1rem;
   font-size: 1rem;
-  color: rgb(161, 161, 161);
-  transition: 500ms;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #2e2d2d, #212121);
-  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  color: rgb(180, 180, 200);
+  border-radius: 8px;
+  background: linear-gradient(145deg, #2e2f38, #1f2027);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(180, 180, 255, 0.5);
 
   &:hover {
-    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-    color: #d6d6d6;
-    transition: 500ms;
-  }
-
-  &:active {
-    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-    color: #d6d6d6;
-    transition: 100ms;
+    transform: scale(0.9);
+    color: black;
+    background: gold;
+    box-shadow: 0px 4px 10px tomato;
+    font-weight: bold;
   }
 `;
 
@@ -177,8 +170,6 @@ const ProjectImg = styled.img`
 
   &:hover {
     transform: scale(1.2);
-    cursor: pointer;
-
   }
 
   @media (max-width: 768px) {
