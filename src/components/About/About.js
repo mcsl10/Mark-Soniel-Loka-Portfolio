@@ -137,7 +137,12 @@ const CoolDevImg = styled.img`
 height: 14rem;
 width: 14rem;
 border-radius: 30%;
-margin: 2.5rem 0;
+margin: 2rem 0 2.5rem 0;
+transition: transform 0.3s ease;
+
+&:hover {
+    transform: scale(1.25); 
+  }
 `
 
 const BottomRow = styled.div`
