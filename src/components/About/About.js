@@ -13,6 +13,9 @@ const About = () => {
   return (
     <Container>
         <Header><HeaderAnimation>About Me</HeaderAnimation></Header>
+
+        {/* Top Section */}
+        <TopRow>
         <DescriptiveText>
           I approach everything with the same curiosity and enthusiasm: 
           <InterestList>
@@ -32,6 +35,10 @@ const About = () => {
           and anything else that piques my interest. 
         </DescriptiveText>
         <CoolDevImg src={coolDev} alt="Developer art" />
+        </TopRow>
+
+        {/* Bottom Section */}
+        <BottomRow>
         <MoreDescriptiveText>
           When it comes to web development,
           challenges are what I'm after. I like being thrown into new territories
@@ -43,6 +50,7 @@ const About = () => {
           while still being engaging. I'm always up for improving my skills
           through exchanges and research.
           </MoreDescriptiveText>
+          </BottomRow>
     </Container>
   );
 };
@@ -91,11 +99,21 @@ box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
 }
 `
 
+const TopRow = styled.div`
+display: flex;
+justify-content: center;
+gap: 7rem;
+
+@media (max-width: 980px) {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+`
+
 const DescriptiveText = styled.p`
-  max-width: 23rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
   font-size: 1.1rem;
-  padding-left: 10px;
 
   @media (max-width: 1212px) {
     font-size: 0.99rem;
@@ -116,13 +134,29 @@ li {
 `
 
 const CoolDevImg = styled.img`
+height: 14rem;
+width: 14rem;
+border-radius: 30%;
+margin: 2.5rem 0;
+`
+
+const BottomRow = styled.div`
+display: flex;
+justify-content: center;
+gap: 7rem;
+margin-top: 1.2rem;
+
+@media (max-width: 980px) {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
 `
 
 const MoreDescriptiveText = styled.p`
-max-width: 25rem;
-margin: 1rem auto;
+margin: 1rem 0;
 font-size: 1.1rem;
-padding-left: 10px;
 
 @media (max-width: 1212px) {
     font-size: 0.99rem;
