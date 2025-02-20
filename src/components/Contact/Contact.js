@@ -1,10 +1,12 @@
-import styled, {keyframes} from "styled-components"
+import styled, {keyframes} from "styled-components";
+import funcoffee from "../Images/funcoffee.png";
 
 const Contact = () => {
 return (
     <Container>
     <ContainerForText>
     <ContactHeader>Let's Get In Touch!</ContactHeader>
+    <FunCoffeeImg src={funcoffee} alt="Happy Coffee" />
     <InfoSection><ColoredWord>Email</ColoredWord> : marksonielloka@gmail.com</InfoSection>
     <InfoSection>Thanks for checking out my portfolio!</InfoSection>
     </ContainerForText>
@@ -55,6 +57,10 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 min-height: 100vh;
+`
+
+const FunCoffeeImg = styled.img`
+height: 16rem;
 `
 
 
