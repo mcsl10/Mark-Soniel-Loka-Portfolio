@@ -47,18 +47,15 @@ const ContainerForText = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-bottom: 100px;
+padding-bottom: 5rem;
 `
 
 const Container = styled.div`
 display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-height: 100vh;
+justify-content: center;
+align-items: flex-end;
+min-height: 100vh;
 `
-
-
 
 
 export default Contact
