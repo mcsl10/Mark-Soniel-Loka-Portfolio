@@ -6,7 +6,10 @@ return (
     <Container>
     <ContainerForText>
     <ContactHeader>Let's Get In Touch!</ContactHeader>
+    <CoffeeWrapper>
     <FunCoffeeImg src={funcoffee} alt="Happy Coffee" />
+    <Smoke />
+    </CoffeeWrapper>
     <InfoSection><ColoredWord>Email</ColoredWord> : marksonielloka@gmail.com</InfoSection>
     <InfoSection>Thanks for checking out my portfolio!</InfoSection>
     </ContainerForText>
@@ -59,9 +62,68 @@ align-items: flex-end;
 min-height: 100vh;
 `
 
+// Smoke Animation
+const rise = keyframes`
+  0% {
+    opacity: 0.2;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-30px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px) scale(1.2);
+  }
+`;
+
+// Wrapper to hold the coffee image & smoke
+const CoffeeWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const FunCoffeeImg = styled.img`
 height: 16rem;
+z-index: 2;
 `
+
+// Smoke effect using a pseudo-element
+const Smoke = styled.div`
+  position: absolute;
+  top: -10px;
+  width: 40px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent);
+  opacity: 0;
+  animation: ${rise} 3s infinite ease-in-out;
+  filter: blur(5px);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent);
+    opacity: 0;
+    animation: ${rise} 3.5s infinite ease-in-out;
+    filter: blur(5px);
+  }
+
+  &::before {
+    left: -20px;
+    animation-delay: 0.3s;
+  }
+
+  &::after {
+    right: -20px;
+    animation-delay: 0.6s;
+  }
+`;
 
 
 export default Contact
