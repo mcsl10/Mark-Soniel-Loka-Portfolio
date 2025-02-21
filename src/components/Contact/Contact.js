@@ -5,13 +5,12 @@ const Contact = () => {
 return (
     <Container>
     <ContainerForText>
-    <ContactHeader>Let's Get In Touch!</ContactHeader>
+    <ContactHeader>Let's have a chat</ContactHeader>
     <CoffeeWrapper>
     <FunCoffeeImg src={funcoffee} alt="Happy Coffee" />
     <Smoke />
     </CoffeeWrapper>
     <InfoSection><ColoredWord>Email</ColoredWord> : marksonielloka@gmail.com</InfoSection>
-    <InfoSection>Thanks for checking out my portfolio!</InfoSection>
     </ContainerForText>
     </Container>
 )
@@ -20,7 +19,7 @@ return (
 const ContactHeader = styled.h2`
 font-weight: 400;
 font-size: 3rem;
-margin-bottom: 50px; 
+margin-bottom: 3.2rem; 
 
 @media (max-width: 888px) {
 font-size: 2.5rem;
