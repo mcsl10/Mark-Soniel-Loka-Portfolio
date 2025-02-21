@@ -9,6 +9,7 @@ import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
+import { SiMongodb } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 
 const Home = () => {
@@ -42,6 +43,10 @@ const Home = () => {
           <TechItem>
           <FaNodeJs />
           <TechText>Node.js</TechText>
+          </TechItem>
+          <TechItem>
+          <SiMongodb />
+          <TechText>MongoDB</TechText>
           </TechItem>
           <TechItem>
           <FaGitAlt />
