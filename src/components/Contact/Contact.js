@@ -16,6 +16,21 @@ return (
 )
 }
 
+const Container = styled.div`
+display: flex;
+justify-content: center;
+align-items: flex-end;
+min-height: 100vh;
+`
+
+const ContainerForText = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 5rem;
+`
+
+
 const ContactHeader = styled.h2`
 font-weight: 400;
 font-size: 3rem;
@@ -30,36 +45,21 @@ font-size: 2rem;
 }
 `
 
-const InfoSection = styled.p`
-font-size: 1.3rem;
 
-@media (max-width: 888px) {
-font-size: 1rem;
-}
+// Wrapper to hold the coffee image & smoke animation
+const CoffeeWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-@media (max-width: 535px) {
-font-size: 0.93rem;
-}
+
+const FunCoffeeImg = styled.img`
+height: 16rem;
+z-index: 2;
 `
 
-const ColoredWord = styled.span`
-color: cyan;
-font-weight: 450;
-`
-
-const ContainerForText = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-bottom: 5rem;
-`
-
-const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: flex-end;
-min-height: 100vh;
-`
 
 // Smoke Animation
 const rise = keyframes`
@@ -77,18 +77,6 @@ const rise = keyframes`
   }
 `;
 
-// Wrapper to hold the coffee image & smoke
-const CoffeeWrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const FunCoffeeImg = styled.img`
-height: 16rem;
-z-index: 2;
-`
 
 // Smoke effect using a pseudo-element
 const Smoke = styled.div`
@@ -123,6 +111,24 @@ const Smoke = styled.div`
     animation-delay: 0.6s;
   }
 `;
+
+
+const InfoSection = styled.p`
+font-size: 1.3rem;
+
+@media (max-width: 888px) {
+font-size: 1rem;
+}
+
+@media (max-width: 535px) {
+font-size: 0.93rem;
+}
+`
+
+const ColoredWord = styled.span`
+color: cyan;
+font-weight: 450;
+`
 
 
 export default Contact
