@@ -80,6 +80,74 @@ const Home = () => {
   );
 };
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+
+  @media (max-width: 870px) {
+    flex-direction: column;
+  }
+`;
+
+
+// Group the profile image and text together
+const ProfileSection = styled.div`
+  display: flex;
+  align-items: flex-start; /* Keep image and text together */
+  flex-direction: row;
+
+  @media (max-width: 1022px) {
+    flex-direction: column;
+    align-items: center; 
+  }
+`;
+
+
+const MyProfileImage = styled.img`
+  width: 21rem;
+  transition: transform 0.3s ease;
+  border-radius: 50%; /* Makes the border around my img sync with my circle shaped img */
+  position: relative;
+  border: 2px solid transparent; /* Transparent so background is visible */
+  background: linear-gradient(white, white) padding-box, 
+              repeating-linear-gradient(45deg, gold, gold 10px, transparent 10px, transparent 20px) border-box;
+  animation: borderAnimation 8s linear infinite;
+
+  &:hover {
+    transform: scale(1.15); 
+  }
+
+  @media (max-width: 1212px) {
+    width: 18rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 16rem;
+  }
+
+  @keyframes borderAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; } /* Moves the dashed effect */
+  }
+`;
+
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+
+  @media (max-width: 1022px) {
+    margin-left: 0;
+    align-items: center;
+  }
+`;
+
+
 const Header = styled.h1`
   font-size: 3.3rem;
   font-weight: 500;
@@ -147,69 +215,49 @@ const IntroText = styled.p`
   }
 `;
 
-const Container = styled.div`
+
+const ContainerForTechStack = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10vh;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;      
 
-  @media (max-width: 870px) {
-    flex-direction: column;
-  }
-`;
-
-// Group the profile image and text together
-const ProfileSection = styled.div`
-  display: flex;
-  align-items: flex-start; /* Keep image and text together */
-  flex-direction: row;
-
-  @media (max-width: 1022px) {
-    flex-direction: column;
-    align-items: center; 
-  }
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 30px;
-
-  @media (max-width: 1022px) {
-    margin-left: 0;
-    align-items: center;
-  }
-`;
-
-const MyProfileImage = styled.img`
-  width: 21rem;
-  transition: transform 0.3s ease;
-  border-radius: 50%; /* Makes the border around my img sync with my circle shaped img */
-  position: relative;
-  border: 2px solid transparent; /* Transparent so background is visible */
-  background: linear-gradient(white, white) padding-box, 
-              repeating-linear-gradient(45deg, gold, gold 10px, transparent 10px, transparent 20px) border-box;
-  animation: borderAnimation 8s linear infinite;
-
-  &:hover {
-    transform: scale(1.15); 
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: lightslategray;
   }
 
   @media (max-width: 1212px) {
-    width: 18rem;
+    svg {
+      width: 2.12rem;
+      height: 2.12rem;
+    }
   }
 
   @media (max-width: 900px) {
-    width: 16rem;
-  }
-
-  @keyframes borderAnimation {
-    0% { background-position: 0 0; }
-    100% { background-position: 40px 40px; } /* Moves the dashed effect */
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 `;
+
+
+const TechItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+
+const TechText = styled.p`
+  margin-top: 8px;
+  color: lightslategray;
+  font-size: 14px;
+`;
+
 
 const ContainerForProfileLinks = styled.div`
   color: gray;
@@ -224,6 +272,30 @@ const ContainerForProfileLinks = styled.div`
     padding-left: 0;
   }
 `;
+
+
+//Added TransformEffectForLinks, since transform wasn't properly applying to my anchors
+//However if I remove TransformEffectForLinks from my github link (Line 42 and 50)
+//But add transition and transform properties to IconLink just above
+//The transform effect will still work for the github logo lol
+
+const TransformEffectForLinks = styled.div`
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+`;
+
+
+const IconLink = styled.a`
+  color: inherit;
+
+  &:hover {
+    color: gold;
+  }
+`;
+
 
 const Linkedin = styled(FaLinkedin)`
   width: 4rem;
@@ -268,65 +340,5 @@ const Github = styled(FaGithubSquare)`
   }
 `;
 
-const IconLink = styled.a`
-  color: inherit;
-
-  &:hover {
-    color: gold;
-  }
-`;
-
-//Added TransformEffectForLinks, since transform wasn't properly applying to my anchors
-//However if I remove TransformEffectForLinks from my github link (Line 42 and 50)
-//But add transition and transform properties to IconLink just above
-//The transform effect will still work for the github logo lol
-
-const TransformEffectForLinks = styled.div`
-  transition: transform 0.3s ease, opacity 0.3s ease;
-
-  &:hover {
-    transform: scale(0.9);
-  }
-`;
-
-const ContainerForTechStack = styled.div`
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center;      
-
-  svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    color: lightslategray;
-  }
-
-  @media (max-width: 1212px) {
-    svg {
-      width: 2.12rem;
-      height: 2.12rem;
-    }
-  }
-
-  @media (max-width: 900px) {
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-`;
-
-const TechItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const TechText = styled.p`
-  margin-top: 8px;
-  color: lightslategray;
-  font-size: 14px;
-`;
 
 export default Home;
