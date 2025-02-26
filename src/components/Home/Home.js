@@ -268,6 +268,14 @@ const ContainerForProfileLinks = styled.div`
   padding-top: 4rem;
   width: 100%;
 
+  @media (max-width: 1580px) {
+    padding-left: 12.7%;
+  }
+
+  @media (max-width: 1270px) {
+    padding-left: 25%;
+  }
+
   @media (max-width: 1022px) {
     padding-left: 0;
   }
