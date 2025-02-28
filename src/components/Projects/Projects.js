@@ -124,7 +124,6 @@ font-size: 1.2rem;
 `;
 
 const ProjectDescription = styled.p`
-  font-weight: 300;
   margin-top: 30px;
   font-size: 1.1rem;
 
