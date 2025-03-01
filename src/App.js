@@ -41,6 +41,7 @@ const App = () => {
     <EveryComponentSection ref={contactRef}>
         <Contact />
     </EveryComponentSection>
+    <Footer />
     </>
   );
 };
